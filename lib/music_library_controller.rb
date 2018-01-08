@@ -24,7 +24,8 @@ class MusicLibraryController
 
      def list_songs
        binding.pry
-       Song.all
+       Song.all do |song,index|
+         puts "#{index}."
      end
 
 end
