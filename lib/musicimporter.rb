@@ -14,7 +14,7 @@ attr_accessor :path
   end
 
   def import
-    Song.create_from_filename
+    Song.create_from_filename(name)
   end
 
 end
