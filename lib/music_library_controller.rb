@@ -22,11 +22,11 @@ class MusicLibraryController
 
      def list_songs
         Song.all.sort_by(&:name).each.with_index(1) do |song, idx|
-          puts "#{idx}. #{song.artist.name} #{song.name} #{song.genre.name}"
+          puts "#{idx}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
         end
        end
 
-   # 
+   #
   #    def list_artists
   #      Artist.all.sort_by(&:name).each.with_index(1) do |art,idx|
   #        puts "#{idx}. #{art.name}"
