@@ -7,7 +7,7 @@ attr_accessor :path
   end
 
   def files
-    Dir.glob("#{path}/*.mp3").map {|file| file.gsub("./spec/fixtures/mp3s/","")}
+    Dir.glob("#{path}/*").map {|file| file.gsub("./spec/fixtures/mp3s/","")}
   end
 
   def import
