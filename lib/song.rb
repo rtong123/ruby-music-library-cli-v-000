@@ -68,10 +68,10 @@ def self.find_or_create_by_name(name)
 end
 
 def self.new_from_filename(name)
-
-  artist,name,genre = name.split(" - ")
-  new_song = self.new(name)
-  return new_song
+binding.pry
+  # artist,name,genre = name.split(" - ")
+  # new_song = self.new(name)
+  # return new_song
 end
 
 
