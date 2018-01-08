@@ -27,6 +27,7 @@ class MusicLibraryController
         if input == "list songs"
           list_songs
        end
+     end
 
 
      def list_artists
