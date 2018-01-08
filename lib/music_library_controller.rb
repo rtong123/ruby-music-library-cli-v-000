@@ -20,6 +20,7 @@ class MusicLibraryController
 
     if input == "list songs"
       list_songs
+    end
       end
     end
 
