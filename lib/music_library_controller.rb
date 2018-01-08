@@ -24,8 +24,8 @@ class MusicLibraryController
 
      def list_songs
        binding.pry
-       Song.all do |song,index|
-         puts "#{index}."
+       Song.all.each do |song,index|
+         puts "#{index}. #{song.artist.name} - #{song.name} - #{song.genre.name}" 
      end
 
 end
