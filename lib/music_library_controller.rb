@@ -23,8 +23,8 @@ class MusicLibraryController
       if input == "list artists"
         list_artists
       end
-      if input == "list genres"
-        list_genres
+      if input == "list genre"
+        list_genre
       end
       if input == "list songs by artist"
         list_songs_by_artist
