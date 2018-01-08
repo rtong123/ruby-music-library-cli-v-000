@@ -26,21 +26,21 @@ class MusicLibraryController
         end
        end
 
-   #
-  #    def list_artists
-  #      Artist.all.sort_by(&:name).each.with_index(1) do |art,idx|
-  #        puts "#{idx}. #{art.name}"
-  #    end
-  #  end
-   #
-  #  def list_genres
-  #    Genre.all.sort_by(&:name).each.with_index(1) do |genre,index|
-  #      puts "#{index}. #{song.genre.name}"
-  #    end
-  #  end
-   #
-  #  def list_songs_by_artist
-  #    puts "Please enter the name of an artist."
-  #    input = gets.strip
-   #end
+   
+     def list_artists
+       Artist.all.sort_by(&:name).each.with_index(1) do |art,idx|
+         puts "#{idx}. #{art.name}"
+     end
+   end
+   
+   def list_genres
+     Genre.all.sort_by(&:name).each.with_index(1) do |genre,index|
+       puts "#{index}. #{song.genre.name}"
+     end
+   end
+   
+   def list_songs_by_artist
+     puts "Please enter the name of an artist."
+     input = gets.strip
+   end
  end
