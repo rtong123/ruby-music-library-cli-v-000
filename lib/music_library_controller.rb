@@ -75,7 +75,4 @@ end
    end
  end
 
- if input == "list songs"
-   list_songs
- end
- end
+ 
