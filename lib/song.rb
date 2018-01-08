@@ -72,6 +72,7 @@ def self.new_from_filename(name)
   artist = Artist.find_or_create_by_name(artist)
   genre = Genre.find_or_create_by_name(genre)
   genre.gsub(".mp3")
+  new(song,artist,genre)
   binding.pry
 
 end
