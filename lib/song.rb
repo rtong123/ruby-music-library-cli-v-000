@@ -78,6 +78,7 @@ end
 def self.create_from_filename(name)
   new_name = self.new_from_filename(name)
   binding.pry
+  new_name.save
 end
 
 
